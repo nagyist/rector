@@ -3,13 +3,13 @@
 declare (strict_types=1);
 namespace Rector\ChangesReporting\Output;
 
-use RectorPrefix202406\Nette\Utils\Strings;
+use RectorPrefix202407\Nette\Utils\Strings;
 use Rector\ChangesReporting\Contract\Output\OutputFormatterInterface;
 use Rector\ValueObject\Configuration;
 use Rector\ValueObject\Error\SystemError;
 use Rector\ValueObject\ProcessResult;
 use Rector\ValueObject\Reporting\FileDiff;
-use RectorPrefix202406\Symfony\Component\Console\Style\SymfonyStyle;
+use RectorPrefix202407\Symfony\Component\Console\Style\SymfonyStyle;
 final class ConsoleOutputFormatter implements OutputFormatterInterface
 {
     /**
@@ -108,6 +108,6 @@ final class ConsoleOutputFormatter implements OutputFormatterInterface
         if ($changeCount === 0) {
             return 'Rector is done!';
         }
-        return \sprintf('%d file%s %s by Rector', $changeCount, $changeCount > 1 ? 's' : '', $configuration->isDryRun() ? 'would have changed (dry-run)' : ($changeCount === 1 ? 'has' : 'have') . ' been changed');
+        return \sprintf('%d file%s %s by Rector', $changeCount, $changeCount > 1 ? 's' : '', $configuration->isDryRun() ? 'would have been changed (dry-run)' : ($changeCount === 1 ? 'has' : 'have') . ' been changed');
     }
 }
