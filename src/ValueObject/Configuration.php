@@ -7,7 +7,7 @@ use Rector\ChangesReporting\Output\ConsoleOutputFormatter;
 use Rector\Configuration\Option;
 use Rector\Configuration\Parameter\SimpleParameterProvider;
 use Rector\ValueObject\Configuration\LevelOverflow;
-use RectorPrefix202604\Webmozart\Assert\Assert;
+use RectorPrefix202605\Webmozart\Assert\Assert;
 final class Configuration
 {
     /**

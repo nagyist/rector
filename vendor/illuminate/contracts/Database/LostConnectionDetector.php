@@ -1,6 +1,6 @@
 <?php
 
-namespace RectorPrefix202604\Illuminate\Contracts\Database;
+namespace RectorPrefix202605\Illuminate\Contracts\Database;
 
 use Throwable;
 interface LostConnectionDetector

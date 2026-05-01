@@ -1,6 +1,6 @@
 <?php
 
-namespace RectorPrefix202604;
+namespace RectorPrefix202605;
 
 /*
  * This file is part of the Symfony package.
@@ -22,5 +22,5 @@ if (\PHP_VERSION_ID < 80400) {
         public const NegativeInfinity = 'negativeinfinity';
         public const PositiveInfinity = 'positiveinfinity';
     }
-    \class_alias('RectorPrefix202604\RoundingMode', 'RoundingMode', \false);
+    \class_alias('RectorPrefix202605\RoundingMode', 'RoundingMode', \false);
 }

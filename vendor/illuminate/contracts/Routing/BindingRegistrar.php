@@ -1,6 +1,6 @@
 <?php
 
-namespace RectorPrefix202604\Illuminate\Contracts\Routing;
+namespace RectorPrefix202605\Illuminate\Contracts\Routing;
 
 interface BindingRegistrar
 {
